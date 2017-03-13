@@ -114,7 +114,6 @@ var SortRow = React.createClass({
     }
   },
   render: function() {
-    let handlers = this.props.panResponder.panHandlers;
     return (
       <Animated.View ref="view" style={[this.state.style, this.props.sortRowStyle, this.props.list.state.pan.getLayout()]}>
         {this.props.renderRow(this.props.rowData.data, this.props.rowData.section, this.props.rowData.index, null, true)}
@@ -313,7 +312,6 @@ var SortableListView = React.createClass({
       })
     }
   },
-  firstRowY: undefined,
   layoutMap: {},
   _rowRefs: {},
   handleRowActive: function(row) {
