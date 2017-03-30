@@ -230,9 +230,8 @@ var SortableListView = React.createClass({
   },
   componentDidMount: function() {
     setTimeout(()=>{
-      this.scrollResponder = this.refs.list.getScrollResponder();
-      this.refs.wrapper.measure((frameX, frameY, frameWidth, frameHeight, pageX, pageY) => {
-
+      this.scrollResponder = this.refs.list && this.refs.list.getScrollResponder();
+      this.refs.wrapper && this.refs.wrapper.measure((frameX, frameY, frameWidth, frameHeight, pageX, pageY) => {
         let layout = {frameX, frameY, frameWidth, frameHeight, pageX, pageY};
         this.wrapperLayout = layout;
       });
