@@ -11,9 +11,11 @@
     "url": "git+https://github.com/deanmcpherson/react-native-sortable-listview.git"
   },
   "dependencies": {
-    "react": "16.0.0-alpha.6",
-    "react-native": "^0.43.3",
     "react-timer-mixin": "^0.13.3"
+  },
+  "peerDependencies": {
+    "react": ">=15.4",
+    "react-native": ">=0.41"
   },
   "keywords": [
     "react-component",
