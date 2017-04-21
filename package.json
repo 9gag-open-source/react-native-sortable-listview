@@ -14,7 +14,7 @@
     "react-timer-mixin": "^0.13.3"
   },
   "peerDependencies": {
-    "react": ">=15.4",
+    "react": "^16.0.0-alpha.6",
     "react-native": ">=0.41"
   },
   "keywords": [
